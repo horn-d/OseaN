@@ -543,6 +543,11 @@ form #subject {
     height: 100px;
 }
 
+.kt .between {
+    height:auto;
+    padding-bottom: 4em;
+}
+
 
 
 
@@ -811,7 +816,7 @@ form #subject {
     }
 
     .kontakt {
-        padding-left: 1em;
+        padding-left: 4em;
         float: left;
     }
 
@@ -832,7 +837,7 @@ form #subject {
         width: 40%;
         right: 30px;
         background-color: #055431;
-        padding-top: 45vh;
+        padding-top: 50vh;
     }
 
     .some img {
