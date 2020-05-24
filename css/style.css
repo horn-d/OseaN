@@ -40,6 +40,34 @@ h3 {
     text-transform: uppercase;
 }
 
+a {
+    color: #055431;
+}
+
+li {
+    text-align: start;
+    font-style: italic;
+}
+
+.button {
+    background-color: #055431;
+    text-decoration: none;
+    color: white;
+    border-radius: 10em;
+    padding: 1em;
+}
+
+.buttons {
+    margin-top: 2em;
+}
+
+.midt {
+    text-align: start;
+}
+
+.midt h2 {
+    text-align: center;
+}
 
 
 
@@ -69,7 +97,7 @@ header {
 #main-nav {
     display: flex;
     margin-right: .5em;
-    background-color: #03815C;
+    background-color: #055431;
 }
 
 #main-nav a {
@@ -93,27 +121,14 @@ header #main-nav .active {
     display: none;
 }
 
+/*    Video top frontpage  */
 
-
-
-
-
-/*    Top / bigphoto     */
-
-.boxtop {
-    display: grid;
-    height: 100%;
-    z-index: -1;
-    position: relative;
-}
-
-.top {
-    width: 100%;
-    height: 100vh;
-    margin: auto;
+video {
     object-fit: cover;
-    position:
+    width: 100vw;
+    height: 100vh;
 }
+
 
 
 
@@ -159,7 +174,7 @@ hr {
     overflow: hidden;
     background: none !important;
     width: 90%;
-    height: 40vh;
+    height: 36vh;
     margin: auto;
 }
 
@@ -264,7 +279,7 @@ section .wave.wave4 {
 
 .some h1 {
     text-align: center;
-    background-color: #03815c;
+    background-color: #055431;
     padding: 20px;
     color: white;
 }
@@ -280,33 +295,6 @@ hr {
 
 
 
-/*     Frontpage    */
-
-article {
-    background-color: white;
-    z-index: 500;
-    width: 90%;
-    margin: auto;
-
-}
-
-article h1 {
-    color: #BC470D;
-    text-align: center;
-}
-
-article p {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 1em;
-}
-
-
-
-
-
-
-
 /*     Parallax     */
 
 .container {
@@ -314,6 +302,7 @@ article p {
     margin: 0 auto;
     color: #333;
     text-align: center;
+    background-color: white;
 }
 
 .container .title {
@@ -321,37 +310,33 @@ article p {
 }
 
 .container h1 {
-    font-size: 3em;
     color: #fff;
     z-index: 10;
     opacity: 0.85;
     text-shadow: 1px 1px #055431;
     letter-spacing: 0.6em;
+    width: 100%;
 }
 
 .container h2 {
-    font-size: 1.5em;
-    letter-spacing: 1em;
+    letter-spacing: 0.8em;
+    text-align: center;
 }
 
 .container h3 {
     font-size: 1.4em;
-    line-height: 0;
+    margin: 0;
 }
 
 .container p {
     text-align: start;
-    margin: auto;
+    margin-bottom: 0;
 }
 
 .between {
     height: 40em;
     position: relative;
     background-color: white;
-}
-
-.between img {
-    width: 40% !important;
 }
 
 
@@ -382,23 +367,68 @@ article p {
     overflow: hidden;
 }
 
-.conatiner .video {
-    src: url(/images/video.mp4);
+.container .viden {
+    background-image: url(/images/viden.JPG)
 }
+
+.container .sam {
+    background-image: url(/images/samarbejdspartnere.JPG)
+}
+
+.container .jern {
+    background-image: url(/images/container.jpg)
+}
+
+.container .foredrag1 {
+    background-image: url(/images/foredrag1.jpg)
+}
+
+.container .foredrag2 {
+    background-image: url(/images/foredrag2.jpg)
+}
+
+.container .foredrag3 {
+    background-image: url(/images/foredragoutsidekids.jpg)
+}
+
 .container .tata {
     background-image: url("/images/esbenogmette.jpg");
 }
 
 .container .ta {
-    background-image: url(/images/DSC_0254_2.JPG)
+    background-image: url(/images/tangplank.JPG)
+}
+
+.container .tang {
+    background-image: url(/images/tang.JPG)
+}
+
+.container .ops {
+    background-image: url(/images/tanghakket.jpg)
 }
 
 .container .omos {
-    background-image: url(/images/PurealgaePAL.jpg)
+    background-image: url(/images/firmaet.jpg)
 }
 
 .container .teamet {
-    background-image: url(/images/IMG_0664.jpeg)
+    background-image: url(/images/metteoganna.jpeg)
+}
+
+.container .blog {
+    background-image: url(/images/esbencolors.jpg)
+}
+
+.container .kont {
+    background-image: url(/images/seaweedtable.jpg)
+}
+
+.container .sfood {
+    background-image: url(/images/seaweedtable.jpg)
+}
+
+.container .cat {
+    background-image: url(/images/esbenbeach.jpeg)
 }
 
 
@@ -408,6 +438,7 @@ article p {
 
 
 /*     Arrow     */
+
 .bottomtext {
     position: absolute;
     bottom: 0;
@@ -459,6 +490,91 @@ article p {
         transform: scale(1);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*      Kontakt formular under kontakt     */
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+input[type=submit] {
+    background-color: #03815C;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #055431;
+}
+
+
+.container2 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+form #subject {
+    height: 100px !important;
+}
+
+
+
+
+/*     Map box     */
+
+#map {
+    width: 50%;
+    height: 400px;
+}
+
+.marker {
+    background-image: url('/images/marker3.png');
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    .mapboxgl-popup {
+        max-width: 200px;
+    }
+
+    .mapboxgl-popup-content {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+
 
 
 
@@ -554,6 +670,23 @@ article p {
         text-align: center;
         padding-bottom: 1em;
     }
+
+
+
+    /*     parallax    */
+
+    .between img {
+        width: 100%;
+    }
+
+
+    /*     mapbox     */
+
+    #map {
+    width: 100%;
+    height: 400px;
+}
+
 }
 
 
@@ -662,7 +795,6 @@ article p {
         right: 0;
         display: inline-block;
         width: 40%;
-        margin-top: 220px;
         right: 30px;
         background-color: #055431;
     }
@@ -692,6 +824,11 @@ article p {
     }
 
     /*   footer   */
+
+    footer {
+        margin-top: -10em;
+    }
+
     footer h1 {
         text-align: start;
     }
@@ -734,6 +871,20 @@ article p {
         width: 50%;
         background-color: white;
         flex-direction: column;
+    }
+
+
+    /*     parallax    */
+
+    .between img {
+        width: 40%;
+    }
+
+
+    /* Medieomtale*/
+
+    .medie img {
+        width: 20%;
     }
 
 }
