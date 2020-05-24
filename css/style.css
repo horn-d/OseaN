@@ -543,7 +543,7 @@ input[type=submit]:hover {
 }
 
 form #subject {
-    height: 100px !important;
+    height: 100px;
 }
 
 
@@ -788,6 +788,31 @@ form #subject {
     }
 
 
+
+        /*   footer   */
+
+
+    footer {
+        margin-top: -10em;
+    }
+
+    footer h1 {
+        text-align: start;
+    }
+
+    .kontakt {
+        padding-left: 1em;
+        float: left;
+    }
+
+    .mapouter {
+        position: relative;
+        text-align: right;
+        width: 50%;
+        float: right;
+    }
+
+
     /*    sociale medier i footer    */
 
     .some {
@@ -823,41 +848,25 @@ form #subject {
         color: white;
     }
 
-    /*   footer   */
 
-    footer {
-        margin-top: -10em;
-    }
 
-    footer h1 {
-        text-align: start;
-    }
 
-    .kontakt {
-        padding-left: 1em;
-        float: left;
-    }
 
-    .mapouter {
-        position: relative;
-        text-align: right;
-        width: 50%;
-        float: right;
+    /*     parallax    */
+
+    .between img {
+        width: 40%;
     }
 
 
+    /*     Medieomtale    */
 
-    /*     Om os     */
-
-    article {
-        display: flex;
-        padding: 1em;
-        margin: 1em auto;
+    .medie img {
+        width: 20%;
     }
 
-    article img {
-        object-fit: cover
-    }
+
+    /*       Om os        */
 
     main .right {
         float: right;
@@ -871,20 +880,6 @@ form #subject {
         width: 50%;
         background-color: white;
         flex-direction: column;
-    }
-
-
-    /*     parallax    */
-
-    .between img {
-        width: 40%;
-    }
-
-
-    /* Medieomtale*/
-
-    .medie img {
-        width: 20%;
     }
 
 }
