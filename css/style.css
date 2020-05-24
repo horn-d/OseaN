@@ -312,10 +312,10 @@ hr {
 .container h1 {
     color: #fff;
     z-index: 10;
-    opacity: 0.85;
-    text-shadow: 1px 1px #055431;
+    opacity: 0.9;
+    text-shadow: 2px 2px #055431;
     letter-spacing: 0.6em;
-    width: 100%;
+    font-size: 3em;
 }
 
 .container h2 {
@@ -861,7 +861,7 @@ form #subject {
 
     /*     Medieomtale    */
 
-    .medie img {
+    main .medie img {
         width: 20%;
     }
 
