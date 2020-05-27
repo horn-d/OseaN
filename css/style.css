@@ -35,9 +35,11 @@ img {
 
 h1,
 h2,
-h3 {
+h3,
+header {
     font-family: 'Poiret One', cursive;
     text-transform: uppercase;
+    letter-spacing: 0.15em;
 }
 
 a {
@@ -48,6 +50,10 @@ li {
     text-align: start;
     font-style: italic;
 }
+
+
+/*               KNAPPER             */
+
 
 .button {
     background-color: #055431;
@@ -71,7 +77,7 @@ li {
 
 
 
-/*     Header     */
+/*              HEADER             */
 
 header {
     background: white;
@@ -97,31 +103,29 @@ header {
 #main-nav {
     display: flex;
     margin-right: .5em;
-    background-color: #055431;
 }
 
-#main-nav a {
+header #main-nav a {
     text-decoration: none;
     display: block;
     font-size: 1.5em;
     line-height: 1.5em;
-    color: #055431;
+    color: black;
 }
 
 #main-nav a:hover {
-    color: white;
+    color: #055431;
 }
 
 header #main-nav .active {
-    text-decoration: underline;
-
+    text-decoration: underline #03815C;
 }
 
 .hidden {
     display: none;
 }
 
-/*    Video top frontpage  */
+/*          VIDEO TOP FRONTPAGE        */
 
 video {
     object-fit: cover;
@@ -136,7 +140,7 @@ video {
 
 
 
-/*     Footer     */
+/*            FOOTER            */
 
 footer {
     background-color: #055431;
@@ -161,7 +165,7 @@ hr {
 }
 
 
-/*     Footer Map     */
+/*            FOOTER MAP            */
 
 .mapouter {
     position: relative;
@@ -179,14 +183,14 @@ hr {
 }
 
 
-/*     Footer Waves     */
+/*           FOOTER WAVES           */
 
 footer section {
     position: relative;
     width: 100%;
-    height: 30vh;
-    background: white;
+    height: 25vh;
     overflow: hidden;
+    background: white opacity: 1;
 }
 
 section .wave {
@@ -254,7 +258,7 @@ section .wave.wave4 {
 
 
 
-/*     links til sociale medier footer     */
+/*          LINKS TIL SOCIALE MEDIER FOOTER       */
 
 .some {
     background-color: white;
@@ -294,7 +298,7 @@ hr {
 
 
 
-/*     Parallax     */
+/*          PARALLAX               */
 
 .container {
     width: 100%;
@@ -323,12 +327,16 @@ hr {
 
 .container h3 {
     font-size: 1.4em;
-    margin: 0;
+    margin: 0.5em 0 0 0;
 }
 
 .container p {
     text-align: start;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0 2em;
+}
+
+.container address {
     padding: 0 2em;
 }
 
@@ -351,7 +359,7 @@ hr {
 
 
 
-/*    Parallax background pictures */
+/*           PARALLAX BACKGROUND PICTURES         */
 
 .container .parallax {
     width: 100%;
@@ -386,6 +394,10 @@ hr {
 
 .container .foredrag3 {
     background-image: url(/images/foredragoutsidekids.jpg)
+}
+
+.container .foredrag4 {
+    background-image: url(/images/foredrag4.jpg)
 }
 
 .container .tata {
@@ -428,13 +440,29 @@ hr {
     background-image: url(/images/esbenbeach.jpeg)
 }
 
+.container .mo {
+    background-image: url(/images/oceandiver.JPG)
+}
+
+.container .res {
+    background-image: url(/images/tangegg.jpg)
+}
+
+.container .leas {
+    background-image: url(/images/tangaspargessalat.jpg)
+}
+
+.container .bd {
+    background-image: url(/images/seaweedshore.JPG)
+}
 
 
 
 
 
 
-/*     Arrow     */
+
+/*                ARROW            */
 
 .bottomtext {
     position: absolute;
@@ -489,6 +517,69 @@ hr {
 }
 
 
+/*           FADE OUT          */
+
+
+.fadeout {
+    -webkit-animation: fadeout 5s ease-in;
+    -moz-animation: fadeout 5s ease-in;
+    animation: fadeout 5s ease-in;
+    opacity: 0;
+    width: 20%;
+    margin: -15em auto 5em auto;
+}
+
+.fadeout img {
+    width: 30%;
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        display: block;
+        opacity: 1;
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+        z-index: -100;
+    }
+}
+
+@-moz-keyframes fadeout {
+    from {
+        display: block;
+        opacity: 1;
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+        z-index: -100;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        display: block;
+        opacity: 1;
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+        z-index: -100;
+    }
+}
+
+
+
+/*               VIDEO ERHVERV          */
+
+.video {
+    width: 100%;
+    height: inherit;
+}
 
 
 
@@ -500,8 +591,7 @@ hr {
 
 
 
-
-/*      Kontakt formular under kontakt     */
+/*          KONTAKT FORMULAR UNDER KONTAKT         */
 
 
 input[type=text],
@@ -544,14 +634,14 @@ form #subject {
 }
 
 .kt .between {
-    height:auto;
+    height: auto;
     padding-bottom: 4em;
 }
 
 
 
 
-/*     Map box     */
+/*          MAP BOX              */
 
 #map {
     width: 50%;
@@ -575,6 +665,19 @@ form #subject {
         font-family: 'Open Sans', sans-serif;
     }
 }
+
+
+
+/*               OPSKRIFTER           */
+
+.opskrifter .between {}
+
+.opskrift {
+    background-color: white;
+    margin: 10em 0;
+}
+
+
 
 
 
@@ -641,7 +744,7 @@ form #subject {
         color: white;
     }
 
-    /*    Dropdown    */
+    /*              DROPDOWN         */
 
     .hidden {
         display: none;
@@ -657,8 +760,6 @@ form #subject {
         display: block;
     }
 
-    .dropdown-content a:hover {}
-
     .dropdown:hover .dropdown-content {
         display: block;
     }
@@ -666,7 +767,11 @@ form #subject {
 
 
 
-    /*    Footer    */
+    /*              FOOTER          */
+
+    footer section {
+        background-color: white;
+    }
 
     .kontakt {
         text-align: center;
@@ -675,7 +780,7 @@ form #subject {
 
 
 
-    /*     parallax    */
+    /*               PARALLAX           */
 
     .between {
         height: inherit;
@@ -695,7 +800,7 @@ form #subject {
     }
 
 
-    /*     mapbox     */
+    /*            MAPBOX              */
 
     #map {
         width: 100%;
@@ -745,7 +850,8 @@ form #subject {
     }
 
     #main-nav a {
-        margin: 0 .5em;
+        margin: 0 .9em;
+        font-size: 2em;
     }
 
     #main-nav {
@@ -804,7 +910,7 @@ form #subject {
 
 
 
-    /*   footer   */
+    /*         FOOTER          */
 
 
     footer {
@@ -828,7 +934,7 @@ form #subject {
     }
 
 
-    /*    sociale medier i footer    */
+    /*    SOCIALE MEDIER I FOOTER    */
 
     .some {
         position: absolute;
@@ -837,7 +943,7 @@ form #subject {
         width: 40%;
         right: 30px;
         background-color: #055431;
-        padding-top: 50vh;
+        padding-top: 40vh;
     }
 
     .some img {
@@ -868,7 +974,7 @@ form #subject {
 
 
 
-    /*     parallax    */
+    /*            PARALLAX        */
 
     main .between img {
         width: 40%;
@@ -876,14 +982,14 @@ form #subject {
     }
 
 
-    /*     Medieomtale    */
+    /*          MEDIEOMTALE            */
 
     main .medie img {
         width: 20%;
     }
 
 
-    /*       Om os        */
+    /*             OM OS              */
 
     main .right {
         float: right;
@@ -898,6 +1004,76 @@ form #subject {
         background-color: white;
         flex-direction: column;
     }
+
+    header a {
+        color: black !important;
+    }
+
+
+
+    /*        OPSKRIFTER      */
+
+    .opskrift {
+        width: 25%;
+        display: inline-block;
+        margin: 10em 2em;
+        padding: 0;
+    }
+
+
+
+    /*        DIALOG BOKSE         */
+
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.modal_dialog {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal_indhold {
+    position: absolute;
+    border: 1px solid #888;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+.knappanel {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.knapper {
+    width: 55px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+
 
 }
 
