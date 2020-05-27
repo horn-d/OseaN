@@ -95,8 +95,7 @@ header {
 
 #logo-burger a {
     margin-right: auto;
-    width: 40%;
-    max-width: 400px;
+    max-width: 200px;
 }
 
 #main-nav {
@@ -848,10 +847,6 @@ form #subject {
         margin: auto;
     }
 
-    header .logo img {
-        width: 60%;
-    }
-
     #main-nav a {
         margin: 0 .9em;
         font-size: 2em;
@@ -991,6 +986,14 @@ form #subject {
         width: 20%;
     }
 
+    .fp header {
+        opacity: .8;
+    }
+
+    .header:hover main .medie img {
+        width: 100%;
+    }
+
 
     /*             OM OS              */
 
@@ -1006,10 +1009,6 @@ form #subject {
         width: 50%;
         background-color: white;
         flex-direction: column;
-    }
-
-    header a {
-        color: black !important;
     }
 
 
