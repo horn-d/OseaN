@@ -48,7 +48,6 @@ a {
 
 li {
     text-align: start;
-    font-style: italic;
 }
 
 
@@ -124,6 +123,7 @@ header #main-nav .active {
 .hidden {
     display: none;
 }
+
 
 /*          VIDEO TOP FRONTPAGE        */
 
@@ -670,7 +670,6 @@ form #subject {
 
 /*               OPSKRIFTER           */
 
-.opskrifter .between {}
 
 .opskrift {
     background-color: white;
@@ -844,9 +843,13 @@ form #subject {
         margin-top: -2.4em;
     }
 
-    .logo {
+    header .logo {
         display: block;
         margin: auto;
+    }
+
+    header .logo img {
+        width: 60%;
     }
 
     #main-nav a {
