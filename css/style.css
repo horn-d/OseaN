@@ -50,6 +50,12 @@ li {
     text-align: start;
 }
 
+button {
+    font-family: 'Poiret One';
+    font-size: 1.8em;
+    border: 0;
+}
+
 
 /*               KNAPPER             */
 
@@ -167,7 +173,7 @@ hr {
 
 /*            FOOTER MAP            */
 
-iframe {
+footer iframe {
     width: 600px;
     height: 500px;
     border: 0;
@@ -686,8 +692,13 @@ form #subject {
     margin: 10em 0;
 }
 
+/*             Blog                 */
 
-
+main iframe {
+    width: 560px;
+    height: 315px;
+    border: 0;
+}
 
 
 
