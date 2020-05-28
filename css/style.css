@@ -531,7 +531,7 @@ hr {
 }
 
 
-/*           FADE OUT          */
+/*           FADE OUT ARROW FRONT PAGE          */
 
 
 .fadeout {
@@ -684,7 +684,7 @@ form #subject {
 
 
 
-/*             Blog                 */
+/*             BLOG                 */
 
 main iframe {
     width: 560px;
@@ -702,50 +702,56 @@ main iframe {
 .opskrift {
     background-color: white;
     margin: 10em 0;
+    cursor: pointer;
+    transition: transform .2s;
 }
 
 
+
+.opskrift:hover {
+  transform: scale(1.12); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
 /*        DIALOG BOKSE         */
 
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    .modal_dialog {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.6);
-    }
+.modal_dialog {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
 
-.modal_dialog h2{
+.modal_dialog h2 {
     margin-top: .5em;
 }
 
-    .modal_indhold {
-        position: absolute;
-        padding: 20px;
-    }
+.modal_indhold {
+    position: absolute;
+    padding: 20px;
+}
 
-    .close {
-        position: absolute;
-        right: 15px;
-        top: 5px;
-        color: #000;
-        font-size: 20px;
-        font-weight: bold;
-        cursor: pointer;
-    }
+.close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-    .close:hover {
-        color: #BC470D;
-    }
+.close:hover {
+    color: #BC470D;
+}
 
 
 
