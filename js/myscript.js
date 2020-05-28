@@ -58,9 +58,20 @@ var geojson = {
             },
             properties: {
                 title: 'Skagen restaurant',
-                description: 'Sønderhøj 30,<br> 8230 Viby '
+                description: 'Fyrvej 42,<br> 9990 Skagen '
             }
-                }
+                },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [8.620941, 56.353717]
+            },
+            properties: {
+                title: 'Restaurant Støberiet',
+                description: 'Museumsvej 2B, <br> 7500 Holstebro '
+            }
+                },
             ]
 };
 
