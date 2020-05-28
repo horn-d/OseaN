@@ -190,7 +190,7 @@ footer iframe {
 
 .gmap_canvas {
     overflow: hidden;
-    background: none !important;
+    background: none;
     width: 90%;
     height: 36vh;
     margin: auto;
