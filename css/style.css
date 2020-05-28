@@ -717,9 +717,9 @@ main iframe {
 
 
 
-/* Media queries */
+/*     Media queries     */
 
-/* Mobil tlf (phones, 600px and down) */
+/*     Mobil tlf (phones, 600px and down)     */
 
 @media all and (max-width: 600px) {
 
@@ -763,6 +763,8 @@ main iframe {
     #main-nav a {
         color: white;
     }
+
+
 
     /*              DROPDOWN         */
 
@@ -1004,6 +1006,10 @@ main iframe {
     main .between img {
         width: 40%;
         padding-bottom: 6em;
+    }
+
+    .between p {
+        margin-top: 1em;
     }
 
 
