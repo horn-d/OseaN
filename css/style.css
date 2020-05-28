@@ -588,20 +588,30 @@ hr {
 
 
 
+
+
+
+
+/*                COPYRIGHT               */
+
+
+.cpb {
+    position: relative;
+}
+
+.cp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
 /*               VIDEO ERHVERV          */
 
 .video {
     width: 100%;
     height: inherit;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -706,11 +716,13 @@ main iframe {
     transition: transform .2s;
 }
 
-
-
 .opskrift:hover {
-  transform: scale(1.12); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.12);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+
+
 
 /*        DIALOG BOKSE         */
 
@@ -1111,7 +1123,7 @@ main iframe {
     .opskrift {
         width: 25%;
         display: inline-block;
-        margin: 10em 2em;
+        margin: 6em 2em 0;
         padding: 0;
     }
 
